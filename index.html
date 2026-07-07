@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FRAND.ART — Wedding Photography & Cinematic Video</title>
+<meta name="description" content="FRAND.ART — Jasa foto dan video wedding premium di Temanggung. Pre-wedding, wedding day, cinematic video.">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</head>
+<body>
+
+<!-- ========== PRELOADER ========== -->
+<div class="preloader" id="preloader">
+    <div class="preloader-inner">
+        <div class="preloader-ring"></div>
+        <div class="preloader-logo">F</div>
+        <div class="preloader-text">FRAND.ART</div>
+        <div class="preloader-bar"><div class="preloader-bar-fill" id="preloaderFill"></div></div>
+        <div class="preloader-percent" id="preloaderPercent">0%</div>
+    </div>
+</div>
+
+<!-- ========== CURSOR ========== -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- ========== SCROLL PROGRESS ========== -->
+<div class="scroll-progress"><div class="scroll-progress-bar" id="scrollProgress"></div></div>
+
+<!-- ========== TOAST ========== -->
+<div class="toast" id="toast">
+    <span class="iconify" data-icon="lucide:check-circle"></span>
+    <div><p class="toast-title">Pesan terkirim!</p><p class="toast-sub">Mengarah ke WhatsApp...</p></div>
+</div>
+
+<!-- ========== NAVIGATION ========== -->
+<nav class="nav" id="navbar">
+    <div class="nav-inner">
+        <a href="#" class="nav-logo">
+            <div class="nav-logo-circle"><span>F</span></div>
+            <span class="nav-logo-text">FRAND.ART</span>
+        </a>
+        <div class="nav-links">
+            <a href="#packages" class="nav-link">Paket</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#story" class="nav-link">Story</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#testimonials" class="nav-link">Testimoni</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-right">
+            <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20dengan%20jasa%20foto%20wedding" target="_blank" class="nav-cta"><span class="iconify" data-icon="logos:whatsapp-icon"></span> Book Now</a>
+            <button class="nav-menu-btn" id="menuBtn"><span class="iconify" data-icon="lucide:menu"></span></button>
+        </div>
+    </div>
+</nav>
+
+<!-- ========== MOBILE MENU ========== -->
+<div class="mob-menu" id="mobMenu">
+    <div class="mob-menu-inner">
+        <a href="#packages" class="mob-link">Paket</a>
+        <a href="#gallery" class="mob-link">Gallery</a>
+        <a href="#story" class="mob-link">Story</a>
+        <a href="#services" class="mob-link">Services</a>
+        <a href="#testimonials" class="mob-link">Testimoni</a>
+        <a href="#contact" class="mob-link">Contact</a>
+    </div>
+    <div class="mob-menu-footer">
+        <a href="https://wa.me/6282146620668" target="_blank" class="mob-social"><span class="iconify" data-icon="logos:whatsapp-icon"></span></a>
+        <a href="https://www.instagram.com/frand.art_photocinema" target="_blank" class="mob-social"><span class="iconify" data-icon="logos:instagram-icon"></span></a>
+        <a href="#" class="mob-social"><span class="iconify" data-icon="logos:youtube-icon"></span></a>
+    </div>
+</div>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="hero">
+    <div class="hero-bg">
+        <video autoplay muted loop playsinline id="heroVideo">
+            <source src="https://cdn.pixabay.com/video/2024/03/18/205188-918995460_large.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-grain"></div>
+    </div>
+    
+    <div class="hero-content">
+        <div class="hero-badge">EST. 2014 — Temanggung</div>
+        <h1 class="hero-title">Amazing Love<br><em>Celebration</em></h1>
+        <p class="hero-sub">Mengabadikan kisah cinta melalui seni cahaya dan bayangan.<br>Berbasis di Temanggung, melayani seluruh Indonesia.</p>
+        <div class="hero-buttons">
+            <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20dengan%20jasa%20foto%20wedding" target="_blank" class="btn-primary"><span class="iconify" data-icon="logos:whatsapp-icon"></span> Booking Sekarang</a>
+            <a href="#packages" class="btn-secondary">Lihat Paket <span class="iconify" data-icon="lucide:arrow-down"></span></a>
+        </div>
+    </div>
+
+    <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="hero-scroll-line"><div class="hero-scroll-dot"></div></div>
+    </div>
+
+    <div class="hero-deco hero-deco-1"></div>
+    <div class="hero-deco hero-deco-2"></div>
+</section>
+
+<!-- ========== MARQUEE ========== -->
+<div class="marquee">
+    <div class="marquee-track">
+        <span>Wedding Photography</span><span class="dot">✦</span>
+        <span>Cinematic Video</span><span class="dot">✦</span>
+        <span>Pre-Wedding</span><span class="dot">✦</span>
+        <span>Engagement</span><span class="dot">✦</span>
+        <span>Couple Session</span><span class="dot">✦</span>
+        <span>Wedding Photography</span><span class="dot">✦</span>
+        <span>Cinematic Video</span><span class="dot">✦</span>
+        <span>Pre-Wedding</span><span class="dot">✦</span>
+        <span>Engagement</span><span class="dot">✦</span>
+        <span>Couple Session</span><span class="dot">✦</span>
+    </div>
+</div>
+
+<!-- ========== PAKET ========== -->
+<section class="packages" id="packages">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label reveal">Pilih Paket</span>
+            <h2 class="section-title reveal r-d1">Yang <em>terbaik</em> untuk momen terbaik</h2>
+            <p class="section-desc reveal r-d2">Dari pre-wedding hingga wedding day, kami hadir sebagai partner dokumentasi terbaik Anda.</p>
+        </div>
+
+        <!-- COUPLE SESSION -->
+        <div class="package-group reveal">
+            <div class="package-group-header">
+                <h3 class="group-title">Couple Session</h3>
+                <p class="group-sub">1 Hari (2 session) — max 8 jam</p>
+            </div>
+            <div class="package-grid">
+                <div class="package-card">
+                    <div class="pkg-icon"><span class="iconify" data-icon="lucide:camera"></span></div>
+                    <h4 class="pkg-name">Photo</h4>
+                    <div class="pkg-price">Rp 3.500.000</div>
+                    <ul class="pkg-list">
+                        <li>2 Fotografer</li>
+                        <li>40 Foto Edit</li>
+                        <li>Semua File Foto</li>
+                        <li>Album 20x30 (40 Halaman)</li>
+                    </ul>
+                    <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20paket%20Couple%20Session%20Photo" target="_blank" class="pkg-btn">Pilih Paket</a>
+                </div>
+                <div class="package-card">
+                    <div class="pkg-icon"><span class="iconify" data-icon="lucide:film"></span></div>
+                    <h4 class="pkg-name">Video</h4>
+                    <div class="pkg-price">Rp 3.000.000</div>
+                    <ul class="pkg-list">
+                        <li>2 Videografer</li>
+                        <li>Teaser Clip</li>
+                        <li>Full Dokumentasi</li>
+                        <li>File HD</li>
+                    </ul>
+                    <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20paket%20Couple%20Session%20Video" target="_blank" class="pkg-btn">Pilih Paket</a>
+                </div>
+                <div class="package-card package-popular">
+                    <div class="pkg-badge">Best Value</div>
+                    <div class="pkg-icon"><span class="iconify" data-icon="lucide:sparkles"></span></div>
+                    <h4 class="pkg-name">Photo + Video</h4>
+                    <div class="pkg-price">Rp 6.000.000</div>
+                    <ul class="pkg-list">
+                        <li>2 Fotografer + 2 Videografer</li>
+                        <li>40 Foto Edit + Teaser Clip</li>
+                        <li>Semua File Foto</li>
+                        <li>Album 20x30 (40 Halaman)</li>
+                    </ul>
+                    <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20paket%20Couple%20Session%20Photo+Video" target="_blank" class="pkg-btn pkg-btn-primary">Pilih Paket</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ENGAGEMENT -->
+        <div class="package-group reveal r-d1">
+            <div class="package-group-header">
+                <h3 class="group-title">Engagement</h3>
+                <p class="group-sub">5 Jam Kerja — Event Lamaran</p>
+            </div>
+            <div class="package-grid">
+                <div class="package-card">
+                    <div class="pkg-icon"><span class="iconify" data-icon="lucide:camera"></span></div>
+                    <h4 class="pkg-name">Photo</h4>
+                    <div class="pkg-price">Rp 3.000.000</div>
+                    <ul class="pkg-list">
+                        <li>2 Fotografer</li>
+                        <li>60 Foto Edit</li>
+                        <li>Semua File Foto</li>
+                        <li>Album 20x30 (20 Halaman)</li>
+                    </ul>
+                    <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20paket%20Engagement%20Photo" target="_blank" class="pkg-btn">Pilih Paket</a>
+                </div>
+                <div class="package-card">
+                    <div class="pkg-icon"><span class="iconify" data-icon="lucide:film"></span></div>
+                    <h4 class="pkg-name">Video</h4>
+                    <div class="pkg-price">Rp 2.500.000</div>
+                    <ul class="pkg-list">
+                        <li>1 Videografer</li>
+                        <li>Clip Souple Session</li>
+                        <li>Full Dokumentasi</li>
+                        <li>File HD</li>
+                    </ul>
+                    <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20paket%20Engagement%20Video" target="_blank" class="pkg-btn">Pilih Paket</a>
+                </div>
+                <div class="package-card package-popular">
+                    <div class="pkg-badge">Best Value</div>
+                    <div class="pkg-icon"><span class="iconify" data-icon="lucide:sparkles"></span></div>
+                    <h4 class="pkg-name">Photo + Video</h4>
+                    <div class="pkg-price">Rp 5.500.000</div>
+                    <ul class="pkg-list">
+                        <li>2 Fotografer + 1 Videografer</li>
+                        <li>60 Foto Edit + Clip Souple Session</li>
+                        <li>Semua File Foto</li>
+                        <li>Album 20x30 (20 Halaman)</li>
+                    </ul>
+                    <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20paket%20Engagement%20Photo+Video" target="_blank" class="pkg-btn pkg-btn-primary">Pilih Paket</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- EMERALD -->
+        <div class="package-group reveal r-d2">
+            <div class="package-group-header">
+                <h3 class="group-title">Wedding Day — Emerald</h3>
+                <p class="group-sub">1 Hari — Foto Wedding</p>
+            </div>
+            <div class="package-grid">
+                <div class="package-card">
+                    <div class="pkg-icon"><span class="iconify" data-icon="lucide:camera"></span></div>
+                    <h4 class="pkg-name">Photo</h4>
+                    <div class="pkg-price">Rp 4.000.000</div>
+                    <ul class="pkg-list">
+                        <li>2 Fotografer</li>
+                        <li>100 Foto Edit</li>
+                        <li>Semua File Foto</li>
+                        <li>Album 20x30 (20 Halaman)</li>
+                    </ul>
+                    <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20paket%20Emerald%20Photo" target="_blank" class="pkg-btn">Pilih Paket</a>
+                </div>
+                <div class="package-card">
+                    <div class="pkg-icon"><span class="iconify" data-icon="lucide:film"></span></div>
+                    <h4 class="pkg-name">Video</h4>
+                    <div class="pkg-price">Rp 3.500.000</div>
+                    <ul class="pkg-list">
+                        <li>2 Videografer</li>
+                        <li>Wedding Teaser</li>
+                        <li>Full Dokumentasi</li>
+                        <li>File HD</li>
+                    </ul>
+                    <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20paket%20Emerald%20Video" target="_blank" class="pkg-btn">Pilih Paket</a>
+                </div>
+                <div class="package-card package-popular">
+                    <div class="pkg-badge">Best Value</div>
+                    <div class="pkg-icon"><span class="iconify" data-icon="lucide:sparkles"></span></div>
+                    <h4 class="pkg-name">Photo + Video</h4>
+                    <div class="pkg-price">Rp 7.000.000</div>
+                    <ul class="pkg-list">
+                        <li>2 Fotografer + 2 Videografer</li>
+                        <li>100 Foto Edit + Wedding Teaser</li>
+                        <li>Semua File Foto</li>
+                        <li>Album 20x30 (20 Halaman)</li>
+                    </ul>
+                    <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20paket%20Emerald%20Photo+Video" target="_blank" class="pkg-btn pkg-btn-primary">Pilih Paket</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- RUBY -->
+        <div class="package-group reveal r-d3">
+            <div class="package-group-header">
+                <h3 class="group-title">Wedding Day — Ruby</h3>
+                <p class="group-sub">1 Hari — Foto Wedding</p>
+            </div>
+            <div class="package-grid">
+                <div class="package-card">
+                    <div class="pkg-icon"><span class="iconify" data-icon="lucide:camera"></span></div>
+                    <h4 class="pkg-name">Photo</h4>
+                    <div class="pkg-price">Rp 5.000.000</div>
+                    <ul class="pkg-list">
+                        <li>2 Fotografer</li>
+                        <li>120 Foto Edit</li>
+                        <li>Semua File Foto</li>
+                        <li>Album 20x30 (40 Halaman)</li>
+                    </ul>
+                    <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20paket%20Ruby%20Photo" target="_blank" class="pkg-btn">Pilih Paket</a>
+                </div>
+                <div class="package-card">
+                    <div class="pkg-icon"><span class="iconify" data-icon="lucide:film"></span></div>
+                    <h4 class="pkg-name">Video</h4>
+                    <div class="pkg-price">Rp 5.000.000</div>
+                    <ul class="pkg-list">
+                        <li>2 Videografer</li>
+                        <li>Wedding Clip</li>
+                        <li>Full Dokumentasi</li>
+                        <li>File HD</li>
+                    </ul>
+                    <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20paket%20Ruby%20Video" target="_blank" class="pkg-btn">Pilih Paket</a>
+                </div>
+                <div class="package-card package-popular">
+                    <div class="pkg-badge">Best Value</div>
+                    <div class="pkg-icon"><span class="iconify" data-icon="lucide:sparkles"></span></div>
+                    <h4 class="pkg-name">Photo + Video</h4>
+                    <div class="pkg-price">Rp 9.000.000</div>
+                    <ul class="pkg-list">
+                        <li>2 Fotografer + 2 Videografer</li>
+                        <li>120 Foto Edit + Wedding Clip</li>
+                        <li>Semua File Foto</li>
+                        <li>Album 20x30 (40 Halaman)</li>
+                    </ul>
+                    <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20paket%20Ruby%20Photo+Video" target="_blank" class="pkg-btn pkg-btn-primary">Pilih Paket</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SAPPHIRE -->
+        <div class="package-group reveal r-d4">
+            <div class="package-group-header">
+                <h3 class="group-title">Wedding Day — Sapphire</h3>
+                <p class="group-sub">1 Hari — Foto Wedding</p>
+            </div>
+            <div class="package-grid">
+                <div class="package-card">
+                    <div class="pkg-icon"><span class="iconify" data-icon="lucide:camera"></span></div>
+                    <h4 class="pkg-name">Photo</h4>
+                    <div class="pkg-price">Rp 5.500.000</div>
+                    <ul class="pkg-list">
+                        <li>2 Fotografer</li>
+                        <li>150 Foto Edit</li>
+                        <li>Semua File Foto</li>
+                        <li>Album 30x30 (50 Halaman)</li>
+                    </ul>
+                    <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20paket%20Sapphire%20Photo" target="_blank" class="pkg-btn">Pilih Paket</a>
+                </div>
+                <div class="package-card">
+                    <div class="pkg-icon"><span class="iconify" data-icon="lucide:film"></span></div>
+                    <h4 class="pkg-name">Video</h4>
+                    <div class="pkg-price">Rp 6.000.000</div>
+                    <ul class="pkg-list">
+                        <li>2 Videografer</li>
+                        <li>Wedding Teaser + Clip</li>
+                        <li>Full Dokumentasi</li>
+                        <li>File HD</li>
+                    </ul>
+                    <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20paket%20Sapphire%20Video" target="_blank" class="pkg-btn">Pilih Paket</a>
+                </div>
+                <div class="package-card package-popular">
+                    <div class="pkg-badge">Best Value</div>
+                    <div class="pkg-icon"><span class="iconify" data-icon="lucide:sparkles"></span></div>
+                    <h4 class="pkg-name">Photo + Video</h4>
+                    <div class="pkg-price">Rp 11.000.000</div>
+                    <ul class="pkg-list">
+                        <li>2 Fotografer + 2 Videografer</li>
+                        <li>150 Foto Edit + Teaser + Clip</li>
+                        <li>Semua File Foto</li>
+                        <li>Album 30x30 (50 Halaman)</li>
+                    </ul>
+                    <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20paket%20Sapphire%20Photo+Video" target="_blank" class="pkg-btn pkg-btn-primary">Pilih Paket</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- BRAND YOUR WEDDING -->
+        <div class="package-group reveal r-d5">
+            <div class="package-group-header">
+                <h3 class="group-title">Wedding Day — Brand Your Wedding</h3>
+                <p class="group-sub">Photo + Video — Include Prewedding</p>
+            </div>
+            <div class="package-grid package-grid-2">
+                <div class="package-card package-card-wide">
+                    <div class="pkg-icon"><span class="iconify" data-icon="lucide:sparkles"></span></div>
+                    <h4 class="pkg-name">Halfday</h4>
+                    <div class="pkg-price">Rp 17.000.000</div>
+                    <p class="pkg-duration">max 8 jam kerja</p>
+                    <ul class="pkg-list">
+                        <li><strong>Photo:</strong> 2 Fotografer, 150 Foto Edit, Album 30x30 (50 Halaman)</li>
+                        <li><strong>Video:</strong> 2 Videografer, Wedding Teaser + Clip</li>
+                        <li><strong>Pre-Wedding:</strong> 1 Hari (2-3 sesi), 2 Fotografer, 80 Foto Edit, Album 20x30 (44 Halaman)</li>
+                        <li><strong>Pre-Wedding Video:</strong> 2 Videografer, Wedding Clip</li>
+                    </ul>
+                    <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20paket%20Brand%20Your%20Wedding%20Halfday" target="_blank" class="pkg-btn pkg-btn-primary">Pilih Paket</a>
+                </div>
+                <div class="package-card package-card-wide package-popular">
+                    <div class="pkg-badge">Most Popular</div>
+                    <div class="pkg-icon"><span class="iconify" data-icon="lucide:sparkles"></span></div>
+                    <h4 class="pkg-name">Fullday</h4>
+                    <div class="pkg-price">Rp 21.000.000</div>
+                    <p class="pkg-duration">max 12 jam kerja</p>
+                    <ul class="pkg-list">
+                        <li><strong>Photo:</strong> 2 Fotografer, 150 Foto Edit, Album 30x30 (50 Halaman)</li>
+                        <li><strong>Video:</strong> 2 Videografer, Wedding Teaser + Clip</li>
+                        <li><strong>Pre-Wedding:</strong> 1 Hari (2-3 sesi), 2 Fotografer, 80 Foto Edit, Album 20x30 (44 Halaman)</li>
+                        <li><strong>Pre-Wedding Video:</strong> 2 Videografer, Wedding Clip</li>
+                    </ul>
+                    <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20paket%20Brand%20Your%20Wedding%20Fullday" target="_blank" class="pkg-btn pkg-btn-primary">Pilih Paket</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- DIAMOND -->
+        <div class="package-group reveal r-d6">
+            <div class="package-group-header">
+                <h3 class="group-title">Wedding Day — Diamond</h3>
+                <p class="group-sub">Premium Package — 3 Fotografer + 2 Videografer</p>
+            </div>
+            <div class="package-grid package-grid-2">
+                <div class="package-card package-card-wide">
+                    <div class="pkg-icon"><span class="iconify" data-icon="lucide:gem"></span></div>
+                    <h4 class="pkg-name">Diamond</h4>
+                    <div class="pkg-price">Rp 19.000.000</div>
+                    <ul class="pkg-list">
+                        <li><strong>Photo:</strong> 3 Fotografer, 250 Foto Edit, Album 40x30 (60 Halaman) + 30x30 (60 Halaman)</li>
+                        <li><strong>Video:</strong> 2 Videografer, Wedding Teaser + Clip</li>
+                        <li>Live Video Stream</li>
+                    </ul>
+                    <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20paket%20Diamond%2019jt" target="_blank" class="pkg-btn pkg-btn-primary">Pilih Paket</a>
+                </div>
+                <div class="package-card package-card-wide package-popular">
+                    <div class="pkg-badge">Premium</div>
+                    <div class="pkg-icon"><span class="iconify" data-icon="lucide:gem"></span></div>
+                    <h4 class="pkg-name">Diamond+</h4>
+                    <div class="pkg-price">Rp 23.000.000</div>
+                    <ul class="pkg-list">
+                        <li><strong>Photo:</strong> 3 Fotografer, 250 Foto Edit, Album 40x30 (60 Halaman) + 30x30 (60 Halaman)</li>
+                        <li><strong>Video:</strong> 2 Videografer, Wedding Teaser + Clip</li>
+                        <li>Live Video Stream</li>
+                        <li><strong>Extra:</strong> Same Day Edit, Drone Aerial</li>
+                    </ul>
+                    <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20paket%20Diamond%2023jt" target="_blank" class="pkg-btn pkg-btn-primary">Pilih Paket</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- NOTES -->
+        <div class="package-notes reveal">
+            <p>* Semua harga dalam mata uang rupiah</p>
+            <p>* Harga sudah termasuk akomodasi hotel dan transportasi kru JOG | SMG</p>
+            <p>* Harga tidak termasuk makan dan biaya entree</p>
+            <p>* Semua file mentah video tidak akan dibagikan</p>
+            <p>* Wedding package termasuk Holy Matrimony dan Resepsi dalam satu hari</p>
+            <p>* Overtime 10% dari package / jam</p>
+        </div>
+    </div>
+</section>
+
+<!-- ========== GALLERY ========== -->
+<section class="gallery" id="gallery">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label reveal">Gallery</span>
+            <h2 class="section-title reveal r-d1">Moments that <em>last forever</em></h2>
+        </div>
+    </div>
+    <div class="gallery-track-wrap" id="galleryWrap">
+        <div class="gallery-track" id="galleryTrack">
+            <div class="gallery-item" data-img="https://z-cdn-media.chatglm.cn/files/79bc44d1-a1b0-4ee5-bc71-d08858e1f1b1.jpeg?auth_key=1883351620-dc601742346c4e72883367e50b70af59-0-2cd287aad40db093fef51dfadd7d957c" data-cat="Pantai, Malam Hari" data-title="Under The Stars">
+                <img src="https://z-cdn-media.chatglm.cn/files/79bc44d1-a1b0-4ee5-bc71-d08858e1f1b1.jpeg?auth_key=1883351620-dc601742346c4e72883367e50b70af59-0-2cd287aad40db093fef51dfadd7d957c" alt="Under The Stars">
+                <div class="gallery-overlay"><span class="gallery-cat">Pantai, Malam Hari</span><h3 class="gallery-title">Under The Stars</h3></div>
+            </div>
+            <div class="gallery-item" data-img="https://z-cdn-media.chatglm.cn/files/22f38ae4-5d8a-44d8-b3ad-1ea1c70fdf96.jpeg?auth_key=1883351620-7a6a2374ec5548fdbd92f88dfaca9b80-0-477a72e1ce5de75c78746e49157f66dc" data-cat="Hutan Pinus" data-title="Among The Pines">
+                <img src="https://z-cdn-media.chatglm.cn/files/22f38ae4-5d8a-44d8-b3ad-1ea1c70fdf96.jpeg?auth_key=1883351620-7a6a2374ec5548fdbd92f88dfaca9b80-0-477a72e1ce5de75c78746e49157f66dc" alt="Among The Pines">
+                <div class="gallery-overlay"><span class="gallery-cat">Hutan Pinus</span><h3 class="gallery-title">Among The Pines</h3></div>
+            </div>
+            <div class="gallery-item" data-img="https://z-cdn-media.chatglm.cn/files/2d5dc762-6380-45e2-b5cd-e925bc0cb838.jpeg?auth_key=1883351620-98fde1d313b04b4391f41946bf4ae219-0-8f2aeb8cbfcfd6b82bf2c1bae654d9b9" data-cat="Pantai & Kuda" data-title="Wild & Free">
+                <img src="https://z-cdn-media.chatglm.cn/files/2d5dc762-6380-45e2-b5cd-e925bc0cb838.jpeg?auth_key=1883351620-98fde1d313b04b4391f41946bf4ae219-0-8f2aeb8cbfcfd6b82bf2c1bae654d9b9" alt="Wild & Free">
+                <div class="gallery-overlay"><span class="gallery-cat">Pantai & Kuda</span><h3 class="gallery-title">Wild & Free</h3></div>
+            </div>
+            <div class="gallery-item" data-img="https://z-cdn-media.chatglm.cn/files/11adaae8-58f1-42b9-bffe-b6456c769bbf.jpeg?auth_key=1883351620-671d3ed347ab4200bdd3e1a0ed8b8327-0-d26e8848787113c824bf0101caa2dbbc" data-cat="Tebing" data-title="Cliffside Romance">
+                <img src="https://z-cdn-media.chatglm.cn/files/11adaae8-58f1-42b9-bffe-b6456c769bbf.jpeg?auth_key=1883351620-671d3ed347ab4200bdd3e1a0ed8b8327-0-d26e8848787113c824bf0101caa2dbbc" alt="Cliffside Romance">
+                <div class="gallery-overlay"><span class="gallery-cat">Tebing</span><h3 class="gallery-title">Cliffside Romance</h3></div>
+            </div>
+            <div class="gallery-item" data-img="https://z-cdn-media.chatglm.cn/files/195c3e5f-a191-4b7e-9abc-1787ddbe45e1.jpeg?auth_key=1883351620-e4f882b905bf40b2ac47b1399780a754-0-338f424e8337350391e8b5ef81b46536" data-cat="Black & White" data-title="Timeless Journey">
+                <img src="https://z-cdn-media.chatglm.cn/files/195c3e5f-a191-4b7e-9abc-1787ddbe45e1.jpeg?auth_key=1883351620-e4f882b905bf40b2ac47b1399780a754-0-338f424e8337350391e8b5ef81b46536" alt="Timeless Journey">
+                <div class="gallery-overlay"><span class="gallery-cat">Black & White</span><h3 class="gallery-title">Timeless Journey</h3></div>
+            </div>
+            <div class="gallery-item" data-img="https://z-cdn-media.chatglm.cn/files/f1214ccd-816b-467f-9dd2-11b9623f41b3.jpeg?auth_key=1883351620-d2f39108aa974188b41244b6611532ec-0-b15243a83cc2c17d469cade268e53097" data-cat="Artistic" data-title="Still Waters">
+                <img src="https://z-cdn-media.chatglm.cn/files/f1214ccd-816b-467f-9dd2-11b9623f41b3.jpeg?auth_key=1883351620-d2f39108aa974188b41244b6611532ec-0-b15243a83cc2c17d469cade268e53097" alt="Still Waters">
+                <div class="gallery-overlay"><span class="gallery-cat">Artistic</span><h3 class="gallery-title">Still Waters</h3></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== STORY ========== -->
+<section class="story" id="story">
+    <div class="container">
+        <div class="story-grid">
+            <div class="story-content">
+                <span class="section-label reveal">Tentang Kami</span>
+                <h2 class="story-title reveal r-d1">Frand.art photocinema<br><em>founded in 2014</em></h2>
+                <p class="story-text reveal r-d2">Frand.art adalah kolektif dari para pembuat gambar dan videografer yang selalu bergairah dalam bercerita. Kami berkomitmen menjadi partner dokumentasi terbaik untuk momen spesial Anda.</p>
+                <p class="story-text story-text-muted reveal r-d3">Pandangan sekilas, air mata dan tawa — semuanya diterjemahkan ke dalam gambar diam dan bergerak, persis seperti yang Anda hargai dan ingat.</p>
+                <div class="story-stats">
+                    <div class="stat"><div class="stat-number" data-count="200">0</div><div class="stat-label">Couples</div></div>
+                    <div class="stat"><div class="stat-number" data-count="10">0</div><div class="stat-label">Years</div></div>
+                    <div class="stat"><div class="stat-number" data-count="15">0</div><div class="stat-label">Cities</div></div>
+                </div>
+            </div>
+            <div class="story-images">
+                <div class="story-img-grid">
+                    <div class="story-img"><img src="https://z-cdn-media.chatglm.cn/files/aee728b5-9ea1-46b4-a1d8-18cad497f2a3.jpeg?auth_key=1883351620-343e492ab0734f519f7458b14702c704-0-0cbcb18393331ffa24ada9ba3cc6434c" alt="Sweet Kitchen"></div>
+                    <div class="story-img"><img src="https://z-cdn-media.chatglm.cn/files/195c3e5f-a191-4b7e-9abc-1787ddbe45e1.jpeg?auth_key=1883351620-e4f882b905bf40b2ac47b1399780a754-0-338f424e8337350391e8b5ef81b46536" alt="Timeless Walk"></div>
+                    <div class="story-img story-img-offset"><img src="https://z-cdn-media.chatglm.cn/files/2d5dc762-6380-45e2-b5cd-e925bc0cb838.jpeg?auth_key=1883351620-98fde1d313b04b4391f41946bf4ae219-0-8f2aeb8cbfcfd6b82bf2c1bae654d9b9" alt="Wild & Free"></div>
+                    <div class="story-img story-img-offset"><img src="https://z-cdn-media.chatglm.cn/files/d7f2e8c9-c516-4366-b19e-a414e7fbcba3.jpeg?auth_key=1883351620-526501b1e20640cfabfd6da0a175cd37-0-f28c881d24b2a16a6b3644685deb1fc0" alt="Morning Light"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== SERVICES ========== -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label reveal">Layanan</span>
+            <h2 class="section-title reveal r-d1">Apa yang kami <em>tawarkan</em></h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <span class="iconify service-icon" data-icon="lucide:camera"></span>
+                <h3>Wedding Photography</h3>
+                <p>Dokumentasi penuh dari persiapan hingga resepsi. Setiap emosi tertangkap dengan presisi dan hati.</p>
+            </div>
+            <div class="service-card reveal r-d1">
+                <span class="iconify service-icon" data-icon="lucide:film"></span>
+                <h3>Cinematic Video</h3>
+                <p>Narasi sinematik dengan drone, same-day edit, highlight film, dan full dokumentasi video standar sinema.</p>
+            </div>
+            <div class="service-card reveal r-d2">
+                <span class="iconify service-icon" data-icon="lucide:heart"></span>
+                <h3>Pre-Wedding</h3>
+                <p>Dari pantai hingga pegunungan — kami merancang dan mengeksekusi konsep pre-wedding sesuai visi Anda.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== TESTIMONIALS ========== -->
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label reveal">Testimoni</span>
+            <h2 class="section-title reveal r-d1">Kata <em>mereka</em></h2>
+        </div>
+        <div class="testimonial-grid">
+            <div class="testimonial-card reveal">
+                <div class="testimonial-stars">★★★★★</div>
+                <p>"Hasilnya melampaui ekspektasi. Setiap foto membangkitkan kembali emosi saat itu."</p>
+                <div class="testimonial-author"><strong>Anisa & Rizky</strong><span>Wonosobo, 2024</span></div>
+            </div>
+            <div class="testimonial-card reveal r-d1">
+                <div class="testimonial-stars">★★★★★</div>
+                <p>"Videonya memiliki kualitas sinematik setara produksi profesional. Sangat direkomendasikan!"</p>
+                <div class="testimonial-author"><strong>Dinda & Faris</strong><span>Temanggung, 2024</span></div>
+            </div>
+            <div class="testimonial-card reveal r-d2">
+                <div class="testimonial-stars">★★★★★</div>
+                <p>"Konsep pre-wedding di tebing dan pantai dieksekusi secara luar biasa. Tim sangat profesional."</p>
+                <div class="testimonial-author"><strong>Maya & Adi</strong><span>Anyer, 2024</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label reveal">FAQ</span>
+            <h2 class="section-title reveal r-d1">Pertanyaan yang <em>sering diajukan</em></h2>
+        </div>
+        <div class="faq-grid">
+            <div class="faq-item reveal">
+                <h4>Dimana lokasi Studio?</h4>
+                <p>Studio kita berada di kota Temanggung. Untuk itu tidak ada tambahan biaya untuk pemotretan di area Temanggung.</p>
+            </div>
+            <div class="faq-item reveal r-d1">
+                <h4>Bisa kah kita memilih lagu sendiri untuk videonya?</h4>
+                <p>Ya, tentu bisa. Tapi, kita tidak bisa menjamin bahwa lagu yang anda pilih akan kita pakai jika director atau editor merasa ada lagu lain yang jauh lebih cocok untuk videonya.</p>
+            </div>
+            <div class="faq-item reveal r-d2">
+                <h4>Cara booking bagaimana?</h4>
+                <p>Anda bisa mengkontak admin kami untuk membicarakan paket service mana yang paling cocok untuk kebutuhan anda, sesuai tanggal yang anda pilih, melalui WA.</p>
+            </div>
+            <div class="faq-item reveal r-d3">
+                <h4>Bagaimana untuk pembayaran?</h4>
+                <p>Anda bisa memberi booking fee 30% dan pelunasan H-7 sebelum event. Kalau anda meng-Cancel booking, 20% dari booking fee tidak akan dikembalikan.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <span class="section-label reveal">Hubungi Kami</span>
+                <h2 class="contact-title reveal r-d1">Siap menceritakan<br>kisah cinta <em>Anda</em>?</h2>
+                <p class="contact-desc reveal r-d2">Hubungi kami untuk konsultasi tanpa komitmen. Kami mendengarkan, memahami, dan mewujudkan visi Anda.</p>
+                <div class="contact-details reveal r-d3">
+                    <div><span class="iconify" data-icon="lucide:map-pin"></span> Dl Panjaitan No. A3, Temanggung</div>
+                    <div><span class="iconify" data-icon="lucide:phone"></span> 0821-4662-0668</div>
+                    <div><span class="iconify" data-icon="lucide:instagram"></span> @frand.art_photocinema</div>
+                </div>
+            </div>
+            <div class="contact-form reveal r-d2">
+                <h3>Kirim Pesan</h3>
+                <p class="form-sub">Isi form di bawah, kami merespon secepatnya</p>
+                <form id="contactForm">
+                    <input type="text" placeholder="Nama Anda" required>
+                    <input type="text" placeholder="Nama Pasangan" required>
+                    <input type="text" placeholder="WhatsApp / Email" required>
+                    <div class="form-row">
+                        <input type="date">
+                        <select required>
+                            <option value="">Pilih Layanan</option>
+                            <option value="couple-photo">Couple Session Photo</option>
+                            <option value="couple-video">Couple Session Video</option>
+                            <option value="couple-photovideo">Couple Session Photo+Video</option>
+                            <option value="engagement-photo">Engagement Photo</option>
+                            <option value="engagement-video">Engagement Video</option>
+                            <option value="engagement-photovideo">Engagement Photo+Video</option>
+                            <option value="emerald-photo">Emerald Photo</option>
+                            <option value="emerald-video">Emerald Video</option>
+                            <option value="emerald-photovideo">Emerald Photo+Video</option>
+                            <option value="ruby-photo">Ruby Photo</option>
+                            <option value="ruby-video">Ruby Video</option>
+                            <option value="ruby-photovideo">Ruby Photo+Video</option>
+                            <option value="sapphire-photo">Sapphire Photo</option>
+                            <option value="sapphire-video">Sapphire Video</option>
+                            <option value="sapphire-photovideo">Sapphire Photo+Video</option>
+                            <option value="brand-halfday">Brand Your Wedding Halfday</option>
+                            <option value="brand-fullday">Brand Your Wedding Fullday</option>
+                            <option value="diamond-19">Diamond 19jt</option>
+                            <option value="diamond-23">Diamond+ 23jt</option>
+                            <option value="custom">Custom / Lainnya</option>
+                        </select>
+                    </div>
+                    <textarea rows="3" placeholder="Ceritakan tentang acara Anda..."></textarea>
+                    <button type="submit" class="btn-submit"><span class="iconify" data-icon="logos:whatsapp-icon"></span> Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    <div class="footer-logo-circle"><span>F</span></div>
+                    <span class="footer-logo-text">FRAND.ART</span>
+                </a>
+                <p>Mengabadikan kisah cinta melalui seni cahaya dan bayangan. Berbasis di Temanggung, melayani seluruh Indonesia.</p>
+                <div class="footer-socials">
+                    <a href="https://wa.me/6282146620668" target="_blank" class="footer-social wa"><span class="iconify" data-icon="logos:whatsapp-icon"></span></a>
+                    <a href="https://www.instagram.com/frand.art_photocinema" target="_blank" class="footer-social ig"><span class="iconify" data-icon="logos:instagram-icon"></span></a>
+                    <a href="#" class="footer-social"><span class="iconify" data-icon="logos:youtube-icon"></span></a>
+                </div>
+            </div>
+            <div class="footer-col"><h5>Paket</h5><a href="#packages">Couple Session</a><a href="#packages">Engagement</a><a href="#packages">Wedding Day</a></div>
+            <div class="footer-col"><h5>Layanan</h5><a href="#services">Wedding Photo</a><a href="#services">Cinematic Video</a><a href="#services">Pre-Wedding</a></div>
+            <div class="footer-col"><h5>Kontak</h5><a href="https://wa.me/6282146620668">0821-4662-0668</a><span>Dl Panjaitan No. A3<br>Temanggung</span></div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 FRAND.ART — Amazing Love Celebration</p>
+            <p>Crafted with <span class="footer-heart">♥</span> in Temanggung</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ========== FLOATING BUTTONS ========== -->
+<div class="floating-buttons" id="floatingBtns">
+    <a href="https://www.instagram.com/frand.art_photocinema" target="_blank" class="float-btn float-ig"><span class="iconify" data-icon="logos:instagram-icon"></span></a>
+    <a href="https://wa.me/6282146620668?text=Halo%20FRAND.ART%2C%20saya%20tertarik%20dengan%20jasa%20foto%20wedding" target="_blank" class="float-btn float-wa"><span class="iconify" data-icon="logos:whatsapp-icon"></span></a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
